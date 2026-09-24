@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen</title>
+  </head>
+  <body>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+<div class="stars" id="stars"></div>
+
+<div class="paw-menu">
+  <div class="paw-btn" onclick="togglePawMenu()">🐾</div>
+  <div class="paw-panel" id="pawPanel">
+    <div class="paw-lang" onclick="setLang('en')">English</div>
+    <div class="paw-lang" onclick="setLang('zh')">中文</div>
+  </div>
+</div>
+
+<div id="introScreen">
+  <div class="intro-logo">MiniYi</div>
+  <div class="intro-en">Your Personal AI Cat Assistant</div>
+  <div class="intro-meaning">
+    <div class="meaning-line"><span class="en">Mini</span>· small, gentle company</div>
+    <div class="meaning-line"><span class="en">Yi</span>· the one you can rely on</div>
+  </div>
+  <div class="intro-cn">A little kitten, only for you.</div>
+</div>
+
+<div class="container">
+  <div class="logo" style="margin-top:14px">Mini<span>Yi</span></div>
+  <div class="sub" id="subText">YOUR PERSONAL AI CAT ASSISTANT</div>
+
+  <div id="chooseScreen">
+    <div class="choose-title" id="chooseTitle">Choose a kitten that you like</div>
+    <div class="choose-sub" id="chooseSub">领养一只，或把它们都带回家</div>
+    <div class="cat-options" id="catOptions"></div>
+  </div>
+
+  <div id="mainScreen">
+    <div class="cat-stage" id="catStage"></div>
+    <div class="bubble" id="bubble">...</div>
+    <div class="chips" id="chips"></div>
+    <div id="inputArea">
+      <div class="input-layout">
+        <div class="cat-side">
+          <div class="glow-ring"></div>
+          <div class="glow-ring delay1"></div>
+          <div class="glow-ring delay2"></div>
+          <div class="cat-half" id="catHalf"></div>
+        </div>
+        <div class="input-side">
+          <textarea id="input" placeholder="Type anything here..."></textarea>
+          <button class="send" onclick="summarize()">Ask MiniYi 🐾</button>
+        </div>
+      </div>
+    </div>
+    <div class="switch-cats" onclick="backToChoose()" id="backText">← 回到领养中心 / Adoption Center</div>
+  </div>
+
+  <div class="footer">© 2024 MiniYi · THINK WITH CARE</div>
+</div>
